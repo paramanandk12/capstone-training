@@ -34,7 +34,7 @@ public class OrderServiceImpl implements OrderService {
 	@Autowired
 	ItemService itemService;
 
-	@Autowired(required=false)
+	@Autowired
 	RestaurentServiceClient client;
 
 	private static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);

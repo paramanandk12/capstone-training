@@ -9,13 +9,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler{
 	
-	@ExceptionHandler(UnauthorizedException.class)
-	public ResponseEntity<Object> exception(UnauthorizedException exception) {
-		
-		 return new ResponseEntity<>("Invalid Credentials", HttpStatus.UNAUTHORIZED);
-	}
-	
-	
 	@ExceptionHandler(RestaurantNotFoundException.class)
 	ResponseEntity<Object> exception(RestaurantNotFoundException exception) {
 		
