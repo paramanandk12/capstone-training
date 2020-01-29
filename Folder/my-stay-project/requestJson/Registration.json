@@ -1,0 +1,10 @@
+{
+	"firstName" : "Ramesh",
+	"lastName" : "Sah",
+	"username":"RSah1",
+	"emailId":"ramseh.sah@gmail.com",
+	"gender":"male",
+	"password":"12345",
+	"mobile":1234567890,
+	"userType":"USER"
+}

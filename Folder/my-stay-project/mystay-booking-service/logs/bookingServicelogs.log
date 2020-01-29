@@ -1,0 +1,322 @@
+[INFO ] 2019-05-16 14:47:36.612 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 14:47:38.879 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 2.734 seconds (JVM running for 86.365)
+[INFO ] 2019-05-16 14:48:15.188 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 14:50:35.902 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 14:50:38.571 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.273 seconds (JVM running for 266.057)
+[INFO ] 2019-05-16 14:51:54.433 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 14:51:57.269 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.388 seconds (JVM running for 344.754)
+[INFO ] 2019-05-16 14:55:35.792 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 14:55:38.432 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.18 seconds (JVM running for 565.918)
+[INFO ] 2019-05-16 17:05:36.082 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 17:05:44.347 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 9.604 seconds (JVM running for 11.006)
+[INFO ] 2019-05-16 17:07:10.258 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 17:07:13.092 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.399 seconds (JVM running for 99.75)
+[INFO ] 2019-05-16 17:08:46.174 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 17:08:53.997 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 9.29 seconds (JVM running for 10.538)
+[INFO ] 2019-05-16 17:09:32.755 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 17:09:33.531 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: status 500 reading SearchServiceProxy#getRooms(String)
+[INFO ] 2019-05-16 17:09:58.302 [http-nio-8105-exec-4] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 17:09:58.314 [http-nio-8105-exec-4] BookingServiceImpl - Exception occur while calling Search Service: status 500 reading SearchServiceProxy#getRooms(String)
+[INFO ] 2019-05-16 17:11:41.765 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 17:11:50.932 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 10.588 seconds (JVM running for 12.175)
+[INFO ] 2019-05-16 17:12:19.333 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 17:12:29.625 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: status 500 reading SearchServiceProxy#getRooms(String)
+[INFO ] 2019-05-16 17:24:25.465 [http-nio-8105-exec-5] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 17:24:26.210 [http-nio-8105-exec-5] BookingServiceImpl - Exception occur while calling Search Service: status 500 reading SearchServiceProxy#getRooms(String)
+[INFO ] 2019-05-16 17:26:13.461 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 17:29:03.725 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 17:29:07.052 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.852 seconds (JVM running for 1048.296)
+[ERROR] 2019-05-16 17:38:09.626 [http-nio-8105-exec-6] BookingServiceImpl - Exception occur while calling Search Service: status 500 reading SearchServiceProxy#getRooms(String)
+[INFO ] 2019-05-16 17:38:12.257 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 18:00:21.913 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:00:26.916 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.846 seconds (JVM running for 2928.159)
+[INFO ] 2019-05-16 18:00:39.136 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:00:43.838 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.397 seconds (JVM running for 2945.08)
+[INFO ] 2019-05-16 18:03:13.780 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:03:17.450 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.269 seconds (JVM running for 3098.693)
+[INFO ] 2019-05-16 18:05:03.782 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:05:07.460 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.255 seconds (JVM running for 3208.703)
+[INFO ] 2019-05-16 18:07:28.923 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:07:32.165 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.938 seconds (JVM running for 3353.407)
+[INFO ] 2019-05-16 18:07:53.898 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:07:56.988 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.594 seconds (JVM running for 3378.231)
+[INFO ] 2019-05-16 18:39:07.905 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:39:10.899 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.852 seconds (JVM running for 105.341)
+[INFO ] 2019-05-16 18:43:57.326 [restartedMain] MystayBookingServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-16 18:44:00.140 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.652 seconds (JVM running for 394.583)
+[INFO ] 2019-05-16 22:24:20.782 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 22:24:28.644 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 10.642 seconds (JVM running for 11.952)
+[INFO ] 2019-05-16 22:27:39.043 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 22:27:41.492 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1002
+[INFO ] 2019-05-16 22:28:07.439 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 22:29:56.959 [http-nio-8105-exec-4] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 22:56:41.744 [http-nio-8105-exec-8] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 22:56:43.750 [http-nio-8105-exec-8] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1002
+[INFO ] 2019-05-16 22:57:04.477 [http-nio-8105-exec-9] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 23:16:11.823 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:16:15.426 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.765 seconds (JVM running for 3118.735)
+[INFO ] 2019-05-16 23:16:42.278 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:16:45.613 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.245 seconds (JVM running for 3148.921)
+[INFO ] 2019-05-16 23:18:27.338 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:18:30.709 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.513 seconds (JVM running for 3254.018)
+[INFO ] 2019-05-16 23:18:40.270 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:18:43.490 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.18 seconds (JVM running for 3266.799)
+[INFO ] 2019-05-16 23:19:07.111 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:19:10.103 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.85 seconds (JVM running for 3293.412)
+[INFO ] 2019-05-16 23:19:20.817 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:19:25.512 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.655 seconds (JVM running for 3308.82)
+[INFO ] 2019-05-16 23:19:37.639 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:19:40.718 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.994 seconds (JVM running for 3324.026)
+[INFO ] 2019-05-16 23:21:22.173 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:21:25.854 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.666 seconds (JVM running for 3429.162)
+[INFO ] 2019-05-16 23:22:25.664 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:22:29.170 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.595 seconds (JVM running for 3492.478)
+[INFO ] 2019-05-16 23:22:36.013 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:22:39.605 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.61 seconds (JVM running for 3502.914)
+[INFO ] 2019-05-16 23:25:16.043 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 23:25:18.120 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1002
+[INFO ] 2019-05-16 23:25:43.360 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 23:26:13.543 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 23:28:28.991 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 23:36:32.826 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:36:35.522 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.509 seconds (JVM running for 4338.83)
+[INFO ] 2019-05-16 23:36:46.764 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:36:49.843 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.447 seconds (JVM running for 4353.151)
+[INFO ] 2019-05-16 23:38:44.010 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-16 23:38:47.380 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.27 seconds (JVM running for 4470.688)
+[INFO ] 2019-05-16 23:38:56.988 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 23:38:59.059 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1002
+[INFO ] 2019-05-16 23:39:32.077 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-16 23:39:45.297 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-16 23:44:47.912 [http-nio-8105-exec-5] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-16 23:45:39.510 [http-nio-8105-exec-6] BookingServiceImpl - Exception in makePayment() ->Timeout while receiving message; nested exception is com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+[INFO ] 2019-05-17 11:36:27.576 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 11:36:37.345 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 13.078 seconds (JVM running for 15.076)
+[INFO ] 2019-05-17 11:48:00.902 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-17 11:48:03.605 [http-nio-8105-exec-1] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1001
+[INFO ] 2019-05-17 11:49:13.693 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 12:14:01.603 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:14:05.148 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.483 seconds (JVM running for 2262.88)
+[INFO ] 2019-05-17 12:18:17.476 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:18:20.252 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.572 seconds (JVM running for 2517.984)
+[INFO ] 2019-05-17 12:20:38.906 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:20:42.146 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.386 seconds (JVM running for 2659.877)
+[INFO ] 2019-05-17 12:33:17.447 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:33:21.603 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.162 seconds (JVM running for 3419.334)
+[INFO ] 2019-05-17 12:35:07.901 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:35:10.956 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.877 seconds (JVM running for 3528.687)
+[INFO ] 2019-05-17 12:44:44.997 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:44:49.218 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.224 seconds (JVM running for 4106.949)
+[INFO ] 2019-05-17 12:49:12.894 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:49:16.912 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.316 seconds (JVM running for 4374.643)
+[INFO ] 2019-05-17 12:49:53.248 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:49:56.917 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.966 seconds (JVM running for 4414.648)
+[INFO ] 2019-05-17 12:53:26.204 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:53:30.647 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.585 seconds (JVM running for 4628.379)
+[INFO ] 2019-05-17 12:55:44.565 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 12:55:48.160 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.533 seconds (JVM running for 4765.892)
+[INFO ] 2019-05-17 13:00:31.166 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:00:34.912 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.804 seconds (JVM running for 5052.643)
+[INFO ] 2019-05-17 13:01:34.584 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-17 13:01:37.235 [hystrix-BookRoom-1] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/1001
+[INFO ] 2019-05-17 13:05:39.156 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:05:42.528 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.585 seconds (JVM running for 5360.26)
+[INFO ] 2019-05-17 13:09:31.632 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:09:49.186 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 20.195 seconds (JVM running for 22.227)
+[INFO ] 2019-05-17 13:17:50.398 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:18:06.120 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 20.168 seconds (JVM running for 33.679)
+[INFO ] 2019-05-17 13:35:44.862 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:35:50.124 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 6.57 seconds (JVM running for 1097.684)
+[INFO ] 2019-05-17 13:36:13.328 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:36:18.174 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.921 seconds (JVM running for 1125.734)
+[INFO ] 2019-05-17 13:37:44.419 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 13:37:48.334 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.851 seconds (JVM running for 1215.894)
+[INFO ] 2019-05-17 14:17:27.210 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:17:31.120 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.902 seconds (JVM running for 3598.664)
+[INFO ] 2019-05-17 14:17:38.579 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:17:43.753 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.999 seconds (JVM running for 3611.297)
+[INFO ] 2019-05-17 14:17:51.383 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:17:54.535 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.078 seconds (JVM running for 3622.079)
+[INFO ] 2019-05-17 14:19:55.987 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:20:03.543 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 9.435 seconds (JVM running for 10.861)
+[INFO ] 2019-05-17 14:26:11.407 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:26:26.460 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 20.894 seconds (JVM running for 24.896)
+[INFO ] 2019-05-17 14:45:28.127 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:45:31.003 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.714 seconds (JVM running for 1169.438)
+[INFO ] 2019-05-17 14:46:11.253 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:46:14.161 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.719 seconds (JVM running for 1212.596)
+[INFO ] 2019-05-17 14:46:26.898 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:46:29.571 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.539 seconds (JVM running for 1228.006)
+[INFO ] 2019-05-17 14:47:20.080 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:47:22.735 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.433 seconds (JVM running for 1281.17)
+[INFO ] 2019-05-17 14:52:10.951 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-17 14:52:18.764 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 9.613 seconds (JVM running for 10.832)
+[INFO ] 2019-05-17 15:01:58.381 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-17 15:02:00.792 [http-nio-8105-exec-6] BookingServiceImpl - Exception occur while calling Search Service: Read timed out executing GET http://mystay-search-service/search/rooms/5cde5f3b8bcd2bfff62d9c3e
+[INFO ] 2019-05-17 15:02:05.584 [http-nio-8105-exec-8] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:02:07.779 [http-nio-8105-exec-7] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:02:09.480 [http-nio-8105-exec-9] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:02:46.936 [http-nio-8105-exec-10] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:02:53.192 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:04:01.479 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:05:04.360 [http-nio-8105-exec-5] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:05:08.472 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:05:50.177 [http-nio-8105-exec-8] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-17 15:15:25.847 [http-nio-8105-exec-9] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-20 14:30:24.612 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 14:30:40.717 [main] BookingControllerTest - Started BookingControllerTest in 19.729 seconds (JVM running for 21.523)
+[INFO ] 2019-05-20 14:31:43.147 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 14:31:55.692 [main] BookingControllerTest - Started BookingControllerTest in 15.356 seconds (JVM running for 17.305)
+[INFO ] 2019-05-20 14:36:26.669 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 14:36:39.709 [main] BookingControllerTest - Started BookingControllerTest in 15.952 seconds (JVM running for 17.709)
+[INFO ] 2019-05-20 14:39:47.074 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 14:40:02.599 [main] BookingControllerTest - Started BookingControllerTest in 18.909 seconds (JVM running for 20.783)
+[INFO ] 2019-05-20 15:02:08.286 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:02:20.655 [main] BookingControllerTest - Started BookingControllerTest in 15.531 seconds (JVM running for 17.583)
+[INFO ] 2019-05-20 15:03:53.227 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:04:05.831 [main] BookingControllerTest - Started BookingControllerTest in 15.932 seconds (JVM running for 17.693)
+[INFO ] 2019-05-20 15:04:48.457 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:05:04.890 [main] BookingControllerTest - Started BookingControllerTest in 21.284 seconds (JVM running for 24.822)
+[INFO ] 2019-05-20 15:07:39.311 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:07:55.893 [main] BookingControllerTest - Started BookingControllerTest in 21.627 seconds (JVM running for 24.474)
+[INFO ] 2019-05-20 15:09:35.243 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:09:51.808 [main] BookingControllerTest - Started BookingControllerTest in 20.895 seconds (JVM running for 24.115)
+[INFO ] 2019-05-20 15:12:30.495 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:12:47.178 [main] BookingControllerTest - Started BookingControllerTest in 21.265 seconds (JVM running for 24.143)
+[INFO ] 2019-05-20 15:12:57.488 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-20 15:19:25.078 [main] BookingServiceTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:19:39.375 [main] BookingServiceTest - Started BookingServiceTest in 17.364 seconds (JVM running for 19.03)
+[INFO ] 2019-05-20 15:20:45.840 [main] BookingServiceTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:20:59.830 [main] BookingServiceTest - Started BookingServiceTest in 17.063 seconds (JVM running for 18.845)
+[ERROR] 2019-05-20 15:21:01.019 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 15:22:31.307 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:22:46.282 [main] BookingControllerTest - Started BookingControllerTest in 18.187 seconds (JVM running for 20.033)
+[INFO ] 2019-05-20 15:22:47.202 [main] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 15:22:47.597 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 15:25:16.380 [main] BookingServiceTest - The following profiles are active: dev
+[INFO ] 2019-05-20 15:25:32.742 [main] BookingServiceTest - Started BookingServiceTest in 21.565 seconds (JVM running for 24.727)
+[ERROR] 2019-05-20 15:32:08.312 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[ERROR] 2019-05-20 15:32:45.666 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[ERROR] 2019-05-20 15:34:23.842 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[ERROR] 2019-05-20 15:36:39.788 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 15:42:03.284 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 15:42:14.518 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 14.41 seconds (JVM running for 17.233)
+[ERROR] 2019-05-20 15:42:29.119 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 15:44:15.734 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 15:44:18.931 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.994 seconds (JVM running for 141.646)
+[INFO ] 2019-05-20 15:57:48.751 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 15:57:51.609 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.651 seconds (JVM running for 954.324)
+[INFO ] 2019-05-20 16:12:56.898 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 16:13:19.007 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 24.84 seconds (JVM running for 26.114)
+[INFO ] 2019-05-20 16:20:33.813 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-20 16:21:21.574 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-20 16:23:59.724 [http-nio-8105-exec-5] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 16:44:44.823 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 16:44:57.698 [hystrix-MakePayment-2] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[INFO ] 2019-05-20 16:48:51.487 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 16:48:55.448 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.048 seconds (JVM running for 2162.556)
+[INFO ] 2019-05-20 16:49:02.941 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 16:49:06.305 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.515 seconds (JVM running for 2173.412)
+[ERROR] 2019-05-20 16:50:41.026 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[INFO ] 2019-05-20 16:52:46.709 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 16:52:49.838 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.325 seconds (JVM running for 2396.946)
+[ERROR] 2019-05-20 16:52:56.680 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 16:57:54.562 [hystrix-MakePayment-2] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 16:58:47.121 [hystrix-MakePayment-3] BookingServiceImpl - Exception in makePayment() ->status 500 reading PaymentServiceProxy#makePayment(Payment)
+[INFO ] 2019-05-20 17:04:52.900 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 17:04:55.916 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.82 seconds (JVM running for 3123.023)
+[ERROR] 2019-05-20 17:06:50.415 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:08:17.111 [hystrix-MakePayment-2] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:12:40.155 [hystrix-MakePayment-3] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[INFO ] 2019-05-20 17:36:34.874 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 17:36:37.992 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.863 seconds (JVM running for 5025.1)
+[ERROR] 2019-05-20 17:37:36.898 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:38:39.012 [hystrix-MakePayment-2] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:38:59.697 [hystrix-MakePayment-3] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:39:02.780 [hystrix-MakePayment-4] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:39:50.612 [hystrix-MakePayment-5] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:40:15.500 [hystrix-MakePayment-6] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[ERROR] 2019-05-20 17:41:12.001 [hystrix-MakePayment-7] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[INFO ] 2019-05-20 17:55:44.562 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 17:55:47.150 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.651 seconds (JVM running for 6174.258)
+[ERROR] 2019-05-20 17:57:28.523 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->Read timed out executing POST http://mystay-payment-service/makePayment
+[INFO ] 2019-05-20 18:09:45.358 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 18:09:48.316 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.734 seconds (JVM running for 7015.397)
+[INFO ] 2019-05-20 18:11:45.557 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 18:11:47.516 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 2.697 seconds (JVM running for 7134.594)
+[INFO ] 2019-05-20 18:13:36.920 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-20 18:13:43.103 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 18:13:45.809 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 10.702 seconds (JVM running for 7252.883)
+[INFO ] 2019-05-20 18:14:02.857 [main] BookingControllerTest - Started BookingControllerTest in 24.317 seconds (JVM running for 27.236)
+[INFO ] 2019-05-20 18:14:04.600 [main] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 18:14:05.164 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 18:14:05.271 [main] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 18:14:05.482 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 18:24:41.158 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-20 18:24:54.372 [main] BookingControllerTest - Started BookingControllerTest in 16.625 seconds (JVM running for 18.728)
+[INFO ] 2019-05-20 18:24:55.245 [main] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 18:24:55.619 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-20 18:24:55.740 [main] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-20 18:24:55.861 [main] BookingServiceImpl - Exception in cancelBooking ->No value present
+[INFO ] 2019-05-21 12:48:17.124 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 12:48:35.737 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 21.197 seconds (JVM running for 22.495)
+[INFO ] 2019-05-21 12:58:51.407 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 13:05:17.043 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 13:36:50.247 [http-nio-8105-exec-6] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 13:38:55.264 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 13:38:58.437 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.19 seconds (JVM running for 3045.195)
+[ERROR] 2019-05-21 13:39:12.223 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->com.netflix.client.ClientException: Load balancer does not have available server for client: mystay-payment-service
+[INFO ] 2019-05-21 13:39:42.983 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 13:39:47.405 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 6.09 seconds (JVM running for 3094.164)
+[ERROR] 2019-05-21 13:39:49.100 [hystrix-MakePayment-1] BookingServiceImpl - Exception in makePayment() ->com.netflix.client.ClientException: Load balancer does not have available server for client: mystay-payment-service
+[ERROR] 2019-05-21 13:40:00.941 [hystrix-MakePayment-2] BookingServiceImpl - Exception in makePayment() ->com.netflix.client.ClientException: Load balancer does not have available server for client: mystay-payment-service
+[ERROR] 2019-05-21 13:40:02.391 [hystrix-MakePayment-3] BookingServiceImpl - Exception in makePayment() ->com.netflix.client.ClientException: Load balancer does not have available server for client: mystay-payment-service
+[INFO ] 2019-05-21 15:40:51.528 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 15:41:01.650 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 12.282 seconds (JVM running for 13.725)
+[INFO ] 2019-05-21 15:42:24.938 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 15:42:28.955 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.827 seconds (JVM running for 101.031)
+[INFO ] 2019-05-21 15:49:37.777 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 15:49:56.473 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 17:01:40.545 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 17:01:53.086 [main] BookingControllerTest - Started BookingControllerTest in 17.652 seconds (JVM running for 19.533)
+[INFO ] 2019-05-21 17:01:54.054 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 17:04:09.995 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 17:04:24.653 [main] BookingControllerTest - Started BookingControllerTest in 17.806 seconds (JVM running for 19.299)
+[INFO ] 2019-05-21 17:04:25.813 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 17:06:03.898 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 17:06:16.220 [main] BookingControllerTest - Started BookingControllerTest in 16.058 seconds (JVM running for 17.673)
+[INFO ] 2019-05-21 17:06:16.915 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 17:20:01.635 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 17:20:22.440 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 26.978 seconds (JVM running for 29.197)
+[INFO ] 2019-05-21 17:47:29.242 [http-nio-8105-exec-1] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 17:47:34.666 [http-nio-8105-exec-2] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 17:47:40.582 [http-nio-8105-exec-3] BookingController - Inside bookRoom method.
+[ERROR] 2019-05-21 17:47:58.672 [hystrix-BookRoom-1] BookingServiceImpl - Exception occur while calling Search Service: status 404 reading CatalogServiceProxy#hotelById(String)
+[INFO ] 2019-05-21 18:36:11.604 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 18:36:16.169 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 5.476 seconds (JVM running for 4582.889)
+[INFO ] 2019-05-21 18:45:57.017 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 18:46:00.273 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.055 seconds (JVM running for 5166.988)
+[INFO ] 2019-05-21 18:46:42.131 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 18:46:44.782 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 3.608 seconds (JVM running for 5211.495)
+[INFO ] 2019-05-21 18:48:29.231 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-21 18:48:33.225 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 18:48:37.495 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 11.533 seconds (JVM running for 5324.207)
+[INFO ] 2019-05-21 18:48:54.337 [main] BookingControllerTest - Started BookingControllerTest in 27.185 seconds (JVM running for 31.986)
+[INFO ] 2019-05-21 18:48:56.064 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 18:48:56.760 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 18:49:52.780 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 18:50:09.633 [main] BookingControllerTest - Started BookingControllerTest in 21.708 seconds (JVM running for 25.45)
+[INFO ] 2019-05-21 18:50:11.008 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 18:50:11.719 [main] BookingController - Inside bookRoom method.
+[INFO ] 2019-05-21 18:57:27.436 [main] BookingControllerTest - The following profiles are active: dev
+[INFO ] 2019-05-21 18:57:40.738 [main] BookingControllerTest - Started BookingControllerTest in 17.204 seconds (JVM running for 19.162)
+[INFO ] 2019-05-22 10:39:38.220 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-22 10:40:06.045 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 33.248 seconds (JVM running for 36.145)
+[INFO ] 2019-05-22 11:32:00.134 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-22 11:32:03.403 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.369 seconds (JVM running for 3153.512)
+[INFO ] 2019-05-22 11:32:27.416 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-05-22 11:32:30.759 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 4.147 seconds (JVM running for 3180.868)
+[INFO ] 2019-10-17 15:22:45.778 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-10-17 15:23:06.017 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 28.063 seconds (JVM running for 30.347)
+[INFO ] 2019-10-21 14:36:31.456 [restartedMain] MystayBookingServiceApplication - The following profiles are active: dev
+[INFO ] 2019-10-21 14:37:03.003 [restartedMain] MystayBookingServiceApplication - Started MystayBookingServiceApplication in 38.189 seconds (JVM running for 43.995)

@@ -1,0 +1,9 @@
+[{
+	"roomNo":"105",
+	"roomType":"luxury",
+	"availability":"yes",
+	"price":4000,
+	"services":[
+			"wifi","ac","tv","breakfast"
+		]
+}]

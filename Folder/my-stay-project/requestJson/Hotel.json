@@ -1,0 +1,47 @@
+[{
+    "hotelId": "1001",
+    "hotelName": "Pearless Hotel",
+    "address": {
+        "street": "Haldiram",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "pin": 721066
+    },
+    "distance": 5,
+    "offers": [
+        "5% Discount for UPI Payment",
+        "5% Discount for SBI Credit Card"
+    ],
+    "rooms": [
+        {
+            "roomNo": "101",
+            "roomType": "luxury",
+            "availability": "yes",
+            "price": 4500,
+            "services": [
+                "wifi"
+            ]
+        },
+        {
+            "roomNo": "103",
+            "roomType": "semi-luxury",
+            "availability": "yes",
+            "price": 700,
+            "services": [
+                "wifi",
+                "ac"
+            ]
+        },
+        {
+            "roomNo": "102",
+            "roomType": "luxury",
+            "availability": "yes",
+            "price": 1400,
+            "services": [
+                "wifi",
+                "ac",
+                "breakfast"
+            ]
+        }
+    ]
+}]

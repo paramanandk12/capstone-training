@@ -1,0 +1,6 @@
+projectKey=mystay-search-service
+serverUrl=http://localhost:9081
+serverVersion=7.1.0.11001
+dashboardUrl=http://localhost:9081/dashboard/index/mystay-search-service
+ceTaskId=AWrol66zm4LWxgADjauL
+ceTaskUrl=http://localhost:9081/api/ce/task?id=AWrol66zm4LWxgADjauL

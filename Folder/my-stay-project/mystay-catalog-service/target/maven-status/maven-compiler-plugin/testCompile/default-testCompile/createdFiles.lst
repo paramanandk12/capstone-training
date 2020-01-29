@@ -1,0 +1,3 @@
+com\mindtree\mystay\catalog\service\CatalogServiceTest.class
+com\mindtree\mystay\catalog\controller\CatalogControllerTest.class
+com\mindtree\mystay\catalog\MystayCatalogServiceApplicationTests.class
