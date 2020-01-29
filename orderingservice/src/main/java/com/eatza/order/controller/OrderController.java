@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eatza.order.dto.OrderRequestDto;
@@ -20,6 +19,7 @@ import com.eatza.order.dto.OrderUpdateDto;
 import com.eatza.order.dto.OrderUpdateResponseDto;
 import com.eatza.order.exception.OrderException;
 import com.eatza.order.kafka.MassegeSender;
+import com.eatza.order.kafka.SenderData;
 import com.eatza.order.model.Order;
 import com.eatza.order.service.orderservice.OrderService;
 
@@ -33,11 +33,18 @@ public class OrderController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
-	@PostMapping("/send")
+	/*@PostMapping("/send")
 	public void senddata(@RequestBody String msg) {
 		
 		massegeSender.sendMessage(msg);
+	}*/
+	
+	@PostMapping("/sendJson")
+	public void senddata(@RequestBody SenderData data) {
+		
+		massegeSender.sendMessage(data);
 	}
+	
 	
 	@PostMapping("/order")
 	public ResponseEntity<Order> placeOrder(@RequestBody OrderRequestDto orderRequestDto) throws OrderException{

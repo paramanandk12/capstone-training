@@ -3,15 +3,12 @@ package com.eatza.orderingservice.controller;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +32,6 @@ import com.eatza.order.model.OrderedItem;
 import com.eatza.order.service.orderservice.OrderServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-
 @RunWith(SpringRunner.class)
 @WebMvcTest(value= OrderController.class)
 public class OrderControllerTest {
@@ -56,13 +50,13 @@ public class OrderControllerTest {
 	String jwt="";
 	String invalidjwt="";
 
-	@Before
+	/*@Before
 	public void setup() {
 		jwt = "Bearer "+Jwts.builder().setSubject("user").claim("roles", "user").setIssuedAt(new Date())
 				.signWith(SignatureAlgorithm.HS256, "secretkey").setExpiration(new Date(System.currentTimeMillis() + EXPIRATIONTIME)).compact();
 	
 	
-	}
+	}*/
 
 	@Test
 	public void placeOrder() throws Exception {
@@ -78,9 +72,8 @@ public class OrderControllerTest {
 		RequestBuilder request = MockMvcRequestBuilders.post(
 				"/order")
 				.contentType(MediaType.APPLICATION_JSON)
-				.content(objectMapper.writeValueAsString((orderRequestDto)))
-				.header(HttpHeaders.AUTHORIZATION,
-						jwt);
+				.content(objectMapper.writeValueAsString((orderRequestDto)));
+				
 		mockMvc.perform(request)
 		.andExpect(status().is(200))
 		.andReturn();
@@ -94,9 +87,8 @@ public class OrderControllerTest {
 		when(orderService.cancelOrder(anyLong())).thenReturn(true);
 		RequestBuilder request = MockMvcRequestBuilders.put(
 				"/order/cancel/1")
-				.accept(MediaType.ALL)
-				.header(HttpHeaders.AUTHORIZATION,
-						jwt);
+				.accept(MediaType.ALL);
+				
 		mockMvc.perform(request)
 		.andExpect(status().isOk())
 		.andReturn();
@@ -203,8 +195,6 @@ public class OrderControllerTest {
 	public void updateOrder_invalid() throws Exception{
 		List<OrderedItem> orderedList = new ArrayList<>();
 		List<OrderedItemsDto> orderedDto = new ArrayList<>();
-		jwt = "Bearer "+Jwts.builder().setSubject("user").claim("roles", "user").setIssuedAt(new Date())
-				.signWith(SignatureAlgorithm.HS256, "secretkey").setExpiration(new Date(System.currentTimeMillis() - EXPIRATIONTIME)).compact();
 		OrderUpdateDto orderUpdateDto = new OrderUpdateDto(1L, 1L, orderedDto, 1L);
 		when(orderService.updateOrder(any(OrderUpdateDto.class))).thenReturn(new OrderUpdateResponseDto(1L, 1L, "UPDATED", 1L,orderedList ));
 		RequestBuilder request = MockMvcRequestBuilders.put(
@@ -223,8 +213,6 @@ public class OrderControllerTest {
 	public void updateOrder_null_token() throws Exception{
 		List<OrderedItem> orderedList = new ArrayList<>();
 		List<OrderedItemsDto> orderedDto = new ArrayList<>();
-		jwt = "Bearer "+Jwts.builder().setSubject("user").claim("roles", "user").setIssuedAt(new Date())
-				.signWith(SignatureAlgorithm.HS256, "secretkey").setExpiration(new Date(System.currentTimeMillis() - EXPIRATIONTIME)).compact();
 		OrderUpdateDto orderUpdateDto = new OrderUpdateDto(1L, 1L, orderedDto, 1L);
 		when(orderService.updateOrder(any(OrderUpdateDto.class))).thenReturn(new OrderUpdateResponseDto(1L, 1L, "UPDATED", 1L,orderedList ));
 		RequestBuilder request = MockMvcRequestBuilders.put(

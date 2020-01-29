@@ -1,0 +1,31 @@
+[‎1/‎25/‎2020 4:30 PM]  Saswati Dash:  
+docker images
+docker run -p 8421:51000 capstone-config-server
+ 
+ 
+ docker run -p {dockerport}:{appPort} [imageName] 
+
+1. start zooker-server
+=====================
+C:\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+2.start kafka-server
+=====================
+C:\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3 create a kafka topic
+=====================
+C:\kafka>.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Messenger1
+
+4. what are the topic present in kafka-server
+=====================
+C:\kafka>.\bin\windows\kafka-topics.bat --list -zookeeper localhost:2181
+
+5.create a kafka producer
+=====================
+C:\kafka>.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic Messenger1
+
+5.create a kafka consumer
+=====================
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Messenger1 --frombeginning
+
