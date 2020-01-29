@@ -1,0 +1,186 @@
+<div style="margin-top: 100px;"
+	data-ng-init="loadSlots(currentProjectID)">
+	<!-- Navigation Bar Starts -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2 class="nav-brand">Schedule Management</h2>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><h6>Welcome Admin</h6></li>
+			</ul>
+
+			<ul class="nav navbar-nav">
+				<li><a href="#!slotCreationProjectSelect"
+					class="btn btn-info btn-sm" role="button">Back</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<th>Project Code:</th>
+					<td>{{currentProjectID}}</td>
+				</tr>
+				<tr>
+					<th>Project Name:</th>
+					<td>{{currentProjectName}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<form id="createSlotForm" data-ng-submit=createSlots(slotDetails)>
+		<div>
+			<table class="table table-striped">
+
+				<tbody>
+					<tr>
+						<td>Select Country</td>
+						<td>
+
+							<div class="dropdown" id="sel1">
+								<select class="form-control input-md"
+									data-ng-model="countriesInList"
+									data-ng-change="getSiteDetails()"
+									data-ng-options="value.countryName for value in countryJsonArray track by value.countryId">
+									<option disabled selected value="">-- Select Country
+										--</option>
+								</select>
+							</div>
+
+						</td>
+						<td>Select Site</td>
+						<td>
+
+							<div class="dropdown" id="sel2">
+								<select class="form-control input-md"
+									data-ng-model="sitesInList" data-ng-change="getAllTimezones()"
+									data-ng-options="value.siteName for value in siteJsonArray track by value.siteId">
+									<option disabled selected value="">-- Select Site --</option>
+								</select>
+							</div>
+
+						</td>
+						<td>Select Time Zone</td>
+						<td>
+
+							<div class="dropdown" id="sel3">
+								<select class="form-control input-md"
+									data-ng-model="timezoneInList"
+									data-ng-options="value for value in timzoneJsonArray">
+									<option disabled selected value="">-- Select Timezone
+										--</option>
+								</select>
+							</div>
+
+						</td>
+					</tr>
+					<tr>
+						<td>Start Date</td>
+						<td><input type="date" data-ng-model="startDate"></td>
+						<td>End Date</td>
+						<td><input type="date" data-ng-model="endDate"></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<div>
+			<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th><input type="checkbox" data-ng-model="selectedAll" /></th>
+						<th>Schedule Name</th>
+						<th>Start Time</th>
+						<th>End Time</th>
+						<th>User Count</th>
+						<th>Freeze Schedule Booking number of Days Ahead</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="slotDetail in slotDetails">
+						<td><input type="checkbox"
+							data-ng-model="slotDetail.selected" /></td>
+						<td><input type="text" class="form-control"
+							data-ng-model="slotDetail.slotName" required /></td>
+						<td><input type="time" class="form-control"
+							data-ng-model="slotDetail.startTime" required /></td>
+						<td><input type="time" class="form-control"
+							data-ng-model="slotDetail.endTime" required /></td>
+						<td><input type="text" class="form-control"
+							data-ng-model="slotDetail.userCountCapacity" required /></td>
+						<td><input type="text" class="form-control"
+							data-ng-model="slotDetail.scheduleFreezDays" required /></td>	
+					</tr>
+				</tbody>
+			</table>
+			<span class="eventMessage" data-ng-model="createMessage">{{createMessage}}</span>
+			<div class="modal-footer">
+				<input type="button" class="btn btn-primary active"
+					data-ng-click="addRow()" value="Add Row"> <input
+					data-ng-hide="!slotDetails.length" type="button"
+					class="btn btn-danger pull-right" data-ng-click="remove()"
+					value="Remove"> <input type="submit"
+					class="btn btn-success pull-left" value="Create Slot">
+			</div>
+		</div>
+	</form>
+	<div class="navbar-header">
+		<h2 class="nav-brand">Available Schedule For Project :
+			{{currentProjectName}}</h2>
+	</div>
+	<div>
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Country</th>
+					<th>Region</th>
+					<th>Slot Name</th>
+					<th>Start Time</th>
+					<th>End Time</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Timezone</th>
+					<th>User Capacity</th>
+					<th>User Occupied</th>
+					<th>Freeze Schedule Booking number of Days Ahead</th>
+					<th>Schedule Status</th>
+					<th>Migration Status</th>
+					<th>Migration Success Count</th>
+					<th>Migration Failure Count</th>
+					<th>Migration Complete Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="slot in slotsJsonArray">
+					<td>{{slot.countryDTO.countryName}}</td>
+					<td>{{slot.siteDTO.siteName}}</td>
+					<td>{{slot.slotName}}</td>
+					<td>{{slot.startTime}}</td>
+					<td>{{slot.endTime}}</td>
+					<td><label
+						data-ng-bind="formatDate({{slot.startDate}}) |  date:'dd/MM/yyyy'"></label></td>
+					<td><label
+						data-ng-bind="formatDate({{slot.endDate}}) |  date:'dd/MM/yyyy'"></label></td>
+					<td>{{slot.timezone}}</td>
+					<td>{{slot.userCountCapacity}}</td>
+					<td>{{slot.userCountOccupied}}</td>
+					<td>{{slot.scheduleFreezDays}}</td>
+					<td>{{slot.slotStatus}}</td>
+					<td>{{slot.slotUserMigrationDetailsDTO.migrationStatus}}</td>
+					<td>{{slot.slotUserMigrationDetailsDTO.slotMigrationSuccessCount}}</td>
+					<td>{{slot.slotUserMigrationDetailsDTO.slotMigrationFailureCount}}</td>
+					<td><label
+						data-ng-bind="formatDate({{slot.slotUserMigrationDetailsDTO.migrationSuccessDate}}) |  date:'dd/MM/yyyy'"></label></td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

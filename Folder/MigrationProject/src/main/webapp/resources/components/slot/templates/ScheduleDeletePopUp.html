@@ -1,0 +1,22 @@
+<!-- Modal for Create  -->
+<div class="modal fade" id="DeleteSchedule" tabindex="-1" role="dialog"
+	aria-labelledby="CreateModelTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<form id="createProjectForm" data-ng-submit=scheduleDeletePopUp(currentSlotID)>
+				<div class="modal-header">
+					<h5>Are you sure want to delete</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>	
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-success" data-ng-disabled="disableDeleteBtn">Delete Schedule</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+					<span class="eventMessage" data-ng-model="createMessage">{{createMessage}}</span>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>

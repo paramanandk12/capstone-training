@@ -1,0 +1,128 @@
+<div style="margin-top: 100px;">
+	<!-- Navigation Bar Starts -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2 class="nav-brand">Dashboard</h2>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><h6>Welcome Admin</h6></li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li><a href="#!dashboard" class="btn btn-info btn-sm"
+					role="button">Back</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div>
+	<input type= "checkbox" data-ng-model="hideColumn"  /> View Less
+	<br /> <br />
+		<table class="table ">
+			<tbody data-ng-repeat="row in workbookData">
+				<tr>
+					<td><b>Uploaded From File :</b> <i>{{row.name}}</i></td>
+					<td><b>Uploaded On :</b> <i>{{row.createdOn}}</i></td>
+					<td><b>Uploaded By :</b> <i>{{row.createdBy}}</i></td>
+				</tr>
+				<tr>
+					<th data-ng-hide ="hideColumn" >ID</th>
+					<th data-ng-hide ="hideColumn" >Region</th>
+					<th data-ng-hide ="hideColumn" >Country</th>
+					<th data-ng-hide ="hideColumn" >Site</th>
+					<th data-ng-hide ="hideColumn">Location</th>
+					<th>User Display Name</th>
+					<th data-ng-hide ="hideColumn" >First Name</th>
+					<th data-ng-hide ="hideColumn">Last Name</th>
+					<th>LOGON ID (UPN) AS-IS</th>
+					<th>sAMAccountName AS-IS</th>
+					<th data-ng-hide ="hideColumn" >AD Domain </th>
+					<th data-ng-hide ="hideColumn" > Organizational Unit </th>
+					<th data-ng-hide ="hideColumn" >User Display Name TO-BE</th>
+					<th data-ng-hide ="hideColumn" >LOGON ID (UPN) TO_BE</th>
+					<th data-ng-hide ="hideColumn" >sAMAccountName TO_BE</th>
+					<th data-ng-hide ="hideColumn" >O365 License TO-BE</th>
+					<th data-ng-hide ="hideColumn" >Primary Email Address AS-IS</th>
+					<th data-ng-hide ="hideColumn" >Alias email address</th>
+					<th data-ng-hide ="hideColumn" >Recipient Type</th>
+					<th data-ng-hide ="hideColumn" >Mailbox Size</th>
+					<th data-ng-hide ="hideColumn" >Primary Email Address TO-BE</th>
+					<th data-ng-hide ="hideColumn" >Alias email address TO-BE</th>
+					<th data-ng-hide ="hideColumn" >Shared Access</th>
+					<th data-ng-hide ="hideColumn" >Calendar Access/ Delegates</th>
+					<th data-ng-hide ="hideColumn" >Messaging Server</th>
+					<th data-ng-hide ="hideColumn" >Messaging Database</th>
+					<th data-ng-hide ="hideColumn" >Corporate Mobile Devices</th>
+					<th data-ng-hide ="hideColumn" >User Skype/Lync ID AS-IS</th>
+					<th data-ng-hide ="hideColumn" >User Skype/Lync ID TO-BE</th>
+					<th data-ng-hide ="hideColumn" >Skype/Lync pool</th>
+					<th data-ng-hide ="hideColumn" >Computer Name</th>
+					<th data-ng-hide ="hideColumn" >Laptop / Desktop</th>
+					<th data-ng-hide ="hideColumn" >SCCM Installed? Active / Inactive?</th>
+					<th data-ng-hide ="hideColumn" >Computer Model</th>
+					<th data-ng-hide ="hideColumn" >Operating System</th>
+					<th data-ng-hide ="hideColumn" >Operating System Version</th>
+					<th data-ng-hide ="hideColumn" >Hardware compatible with W10?</th>
+					<th data-ng-hide ="hideColumn" >Free Disk Space MB</th>
+					<th data-ng-hide ="hideColumn" >(A) Update to Win10 (B) Hardware replacement</th>
+					<th data-ng-hide ="hideColumn" >Specify: A,B or C</th>
+					<th data-ng-hide ="hideColumn" >Local Applications for specific user</th>
+					<th data-ng-hide ="hideColumn" >User home drive data size</th>
+					<th data-ng-hide ="hideColumn" >Comments</th>
+					<th>Migration Status</th>
+				</tr>
+
+				<tr data-ng-repeat="val in row.mastersheetDataDTO">
+					<td data-ng-hide ="hideColumn" >{{val.id}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.region}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.country}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.site}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.location}}</td>
+					<td>{{val.userDisplayName}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.firstName}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.lastName}}</td>
+					<td>{{val.logIdAsIs}}</td>
+					<td>{{val.samAccountAsIs}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.adDomain}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.organizationalUnit}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.userDisplayNameToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.loginIdToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.samAccountToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.o365LicenseToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.primaryEmailAsIs}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.aliasEmailAsIs}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.recipentType}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.mailboxSize}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.primaryEmailToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.aliasEmailToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.sharedAccess}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.calenderDelegates}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.messagingServer}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.messagingDatabase}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.corporateMobileDevice}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.userSkypeLyncAsIs}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.userSkypeLyncToBe}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.skypeLyncPool}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.computerName}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.isLaptopDesktop}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.isSCCMInstalled}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.computermodel}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.operatingSystem}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.operatingSystemVersion}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.isHardwareCompatableWin10}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.freeDiskSpace}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.updateW10HardwareReplacement}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.specifyABC}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.localApplication}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.userHomeDrive}}</td>
+					<td data-ng-hide ="hideColumn" >{{val.comments}}</td>
+					<td>{{val.migrationStatus}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

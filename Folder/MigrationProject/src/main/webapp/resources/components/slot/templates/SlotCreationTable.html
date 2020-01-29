@@ -1,0 +1,37 @@
+<div>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th><input type="checkbox" data-ng-model="selectedAll"
+					data-ng-click="checkAll()" /></th>
+				<th>Slot Name</th>
+				<th>StartTime</th>
+				<th>EndTime</th>
+				<th>UserCount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-ng-repeat="slotDetail in slotDetails">
+				<td><input type="checkbox" data-ng-model="slotDetail.selected" /></td>
+				<td><input type="text" class="form-control"
+					data-ng-model="slotDetail.slotName" required /></td>
+				<td><input type="time" class="form-control"
+					data-ng-model="slotDetail.startTime" required /></td>
+				<td><input type="time" class="form-control"
+					data-ng-model="slotDetail.endTime" required /></td>
+				<td><input type="text" class="form-control"
+					data-ng-model="slotDetail.userCountCapacity" required /></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="modal-footer">
+		<input type="button" class="btn btn-primary active"
+			data-ng-click="addRow()" value="Add Row"> <input
+			data-ng-hide="!slotDetails.length" type="button"
+			class="btn btn-danger pull-right" data-ng-click="remove()"
+			value="Remove"> <input type="submit"
+			class="btn btn-success pull-left" data-ng-submit=createSlot(slot)
+			value="Create Slot">
+	</div>
+</div>

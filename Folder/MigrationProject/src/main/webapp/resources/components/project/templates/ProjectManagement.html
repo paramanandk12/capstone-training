@@ -1,0 +1,88 @@
+<div class="container" style="margin-top: 100px;"
+	data-ng-init="onPageLoad()">
+	<!-- Navigation Bar Starts -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2 class="nav-brand">Project Management</h2>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><h6>Welcome Admin</h6></li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li><a href="#!adminHome" class="btn btn-info btn-sm"
+					role="button">Back</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation Bar Starts -->
+	
+	<table class="table">
+		<thead>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Existing Project list :</td>
+				<td><div class="dropdown">
+						<select required = "required" class ="form-control input-md" data-ng-change="validateProjectSelection()"
+							data-ng-model="projectInList"
+							data-ng-options="'PROJ' + value.id + ' - ' + value.name for value in projectJsonArray track by value.id">
+							<option disabled selected value="">-- Select a Project
+								--</option>
+						</select>
+					</div></td>
+			</tr>
+			<tr>
+				<td>
+					<!-- Button trigger modal for update -->
+					<button type="button" class="btn btn-info" data-toggle="modal"
+						data-ng-click="setValueForUpdateProject()" data-ng-disabled="updateProjectBtn"
+						data-target="#UpdateModel">Update Project</button>
+				</td>
+				<td>
+					<!-- Button trigger modal for uplaod mastersheet -->
+					<button type="button" class="btn btn-info" data-toggle="modal"
+						data-ng-click="clearExisitngFields()" data-ng-disabled="uploadMasterSheetBtn"
+						data-target="#exampleModalCenter">Upload Mastersheet</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table tableProjectCreation">
+		<thead>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>New Project Creation</td>
+			</tr>
+			<tr>
+				<td>
+					<!-- Button trigger modal for create -->
+					<button type="button" class="btn btn-info" data-toggle="modal"
+						data-target="#CreateModel">Create New Project</button>
+				</td>
+			</tr>
+			<tr>
+				<td><h6 class="successMessage" data-ng-show="successMessage">New
+						project created successfully!</h6></td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- Modal for Create  -->
+	<div
+		data-ng-include="'resources/components/project/templates/ModalCreatePopUp.html'">
+	</div>
+	<!-- Modal for Update Mastersheet  -->
+	<div
+		data-ng-include="'resources/components/project/templates/ModalUpdatePopUp.html'">
+	</div>
+	<!-- Modal for Upload Mastersheet  -->
+	<div
+		data-ng-include="'resources/components/project/templates/ModalUploadPopUp.html'">
+	</div>
+</div>

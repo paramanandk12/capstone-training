@@ -1,0 +1,71 @@
+<!-- Modal for Create  -->
+<div class="modal fade" id="ModifyModal" tabindex="-1" role="dialog"
+	aria-labelledby="CreateModelTitle" aria-hidden="true">
+	<form id="modifyUserDetailsModal" data-ng-submit=submitUserDetails(userDetailsUI)>
+	<div class="modal-dialog modal-dialog-centered modal-lg"
+		role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">User Data
+					Verification</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Your Details as Per our Records</th>
+								<th>Current Details</th>
+								<th>To be Updated as</th>
+							</tr>
+						</thead>
+						<tbody>	
+							<tr>
+								<td>First Name <label style="color: red;">*</label> :</td>
+								<td>{{userDetailsUI.firstName}}</td>
+								<td><input type="text"
+									data-ng-model="userDetailsUI.firstNameToBe" required></td>
+							</tr>
+							<tr>
+								<td>Last Name <label style="color: red;">*</label> :</td>
+								<td>{{userDetailsUI.lastName}}</td>
+								<td><input type="text" data-ng-model="userDetailsUI.lastNameToBe"
+									required></td>
+							</tr>
+							<tr>
+								<td>Country <label style="color: red;">*</label> : </td>
+								<td>{{userDetailsUI.country}}</td>
+								<td><input type="text" data-ng-model="userDetailsUI.countryToBe"
+									required></td>
+							</tr>
+							<tr>
+								<td>Site <label style="color: red;">*</label> : </td>
+								<td>{{userDetailsUI.site}}</td>
+								<td><input type="text" data-ng-model="userDetailsUI.siteToBe"
+									required></td>
+							</tr>
+							<tr>
+								<td>SamAccountNameAsIs <label style="color: red;">*</label> : </td>
+								<td>{{userDetailsUI.samAccountNameAsIs}}</td>
+								<td><input type="text"
+									data-ng-model="userDetailsUI.samAccountNameAsIsToBe" required></td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="eventMessage" data-ng-model="submitMessage">{{submitMessage}}</span>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" class="btn btn-success pull-left" 
+							value="Submit"> 
+							<input type="reset"
+							class="btn btn-primary active" value="Reset">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+					</div>
+				</form>
+		</div>

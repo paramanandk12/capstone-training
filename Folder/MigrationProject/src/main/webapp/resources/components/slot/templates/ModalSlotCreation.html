@@ -1,0 +1,44 @@
+<!-- Modal for Create  -->
+<div class="modal fade" id="CreateModel" tabindex="-1" role="dialog"
+	aria-labelledby="CreateModelTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg"
+		role="document">
+		<div class="modal-content">
+			<form id="createSlotForm" data-ng-submit=createSlot(slot)>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">New Slot
+						Table</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table>
+						<tr>
+							<td>Select Country <label style="color: red;">*</label> :
+							</td>
+							<td><input type="text" data-ng-model="slot.country" required></td>
+							<td>Select Site <label style="color: red;">*</label> :
+							</td>
+							<td><input type="text" data-ng-model="slot.region" required></td>
+						</tr>
+						<tr>
+							<td>Migration Start date<label style="color: red;">*</label>
+							</td>
+							<td><input type="date" class="form-control" id="slot.start"
+								required></td>
+							<td>Migration End date<label style="color: red;">*</label> :
+							</td>
+							<td><input type="date" class="form-control" id="slot.end"
+								required></td>
+						</tr>
+					</table>
+				</div>
+				<div
+					data-ng-include="'resources/components/slot/templates/SlotCreationTable.html'">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

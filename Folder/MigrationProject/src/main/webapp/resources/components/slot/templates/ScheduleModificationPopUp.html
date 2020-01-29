@@ -1,0 +1,75 @@
+<!-- Modal for Create  -->
+<div class="modal fade" id="UpdateSchedule" tabindex="-1" role="dialog"
+	aria-labelledby="CreateModelTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<form id="createProjectForm"
+				data-ng-submit=scheduleModificationPopUp(currentSlot)>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Schedule
+						Modification for : {{currentSlot.slotName}}</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table>
+						<tr>
+							<td>Schedule Name <label style="color: red;">*</label> :
+							</td>
+							<td><input type="text" data-ng-model="currentSlot.slotName"
+								required></td>
+						</tr>
+						<tr><!-- data-ng-value="currentSlot.startDate |  date:'yyyy-MM-dd'" -->
+							<td>Start Date<label style="color: red;">*</label> :
+							</td>
+							<td><input type="date" data-ng-model="currentSlot.startDate" data-ng-disabled="updateStartDate"
+								
+								required></td>
+						</tr>
+						<tr><!-- data-ng-value="currentSlot.endDate |  date:'yyyy-MM-dd'" -->
+							<td>End Date<label style="color: red;">*</label> :
+							</td>
+							<td><input type="date" data-ng-model="currentSlot.endDate" data-ng-disabled="updateEndDate"
+								
+								required></td>
+						</tr>
+						<tr><!-- data-ng-value="currentSlot.startTime |  date:'hh:mm:ss'" -->
+							<td>Start Time<label style="color: red;">*</label> :
+							</td>
+							<td><input type="time" data-ng-model="currentSlot.startTime" data-ng-disabled="updateStartTime"
+								
+								required></td>
+						</tr>
+						<tr><!-- data-ng-value="currentSlot.endTime |  date:'hh:mm:ss'" -->
+							<td>End Time<label style="color: red;">*</label> :
+							</td>
+							<td><input type="time" data-ng-model="currentSlot.endTime" data-ng-disabled="updateEndTime"
+								 required></td>
+						</tr>
+						<tr>
+							<td>Schedule Count<label style="color: red;">*</label> :
+							</td>
+							<td><input type="text"
+								data-ng-model="currentSlot.userCountCapacity" required></td>
+						</tr>
+						<tr>
+							<td>Freeze Schedule Booking number of Days Ahead<label style="color: red;">*</label> :
+							</td>
+							<td><input type="text"
+								data-ng-model="currentSlot.scheduleFreezDays" required></td>
+						</tr>
+					</table>
+				</div>
+				<span class="eventMessage" data-ng-model="createMessage">{{createMessage}}</span>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-success">Update
+						Schedule</button>
+					<button type="reset" class="btn btn-warning">Reset</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

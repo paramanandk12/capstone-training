@@ -1,0 +1,53 @@
+/**
+ * Footer Styles
+ */
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");  */
+ 
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: black;
+	text-align: center;
+}
+
+.footerText {
+	color: tomato;
+}
+
+.tableProjectCreation {
+	margin-top: 150px;
+}
+
+.asterik {
+	float: left;
+	height: 30px;
+	padding-right: 4px;
+	padding-top: 2px;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	width: 73px;
+}
+
+.asterik:before {
+	content: "*";
+	color: red
+}
+
+.errorMessage {
+	color: red;
+	font-family: initial;
+}
+
+.successMessage {
+	color: red;
+	font-family: initial;
+}
+
+.eventMessage {
+	color: red;
+	font-family: initial;
+}

@@ -1,0 +1,130 @@
+<div style="margin-top: 100px;" data-ng-init="onPageLoad()">
+	<!-- Navigation Bar Starts -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2 class="nav-brand">Reports</h2>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><h6>Welcome Admin</h6></li>
+			</ul>
+			
+			<ul class="nav navbar-nav">
+				<li><a href="#!reportHome" class="btn btn-info btn-sm"
+					role="button">Back</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						Logout</a></li>
+			</ul>
+			
+		</div>
+	</nav>
+	
+	
+	
+	<form data-ng-submit=getScheduleReport()>
+	<div>
+		<table class="table table-striped">
+
+			<tbody>
+			<tr>
+					<td>Select Project list :</td>
+					<td><div class="dropdown" id="sel1">
+							<select required="required" class="form-control input-md"
+								data-ng-model="projectInList" data-ng-change="getCountryDetails()"
+								data-ng-options="'PROJ' + value.id + ' - ' + value.name for value in projectJsonArray track by value.id">
+								<option disabled selected value="">-- Select a Project
+									--</option>
+							</select>
+						</div></td>
+				</tr>
+			
+			
+				 <tr>
+					<td>Select Country</td>
+					<td>
+
+						<div class="dropdown" id="sel2">
+							<select class="form-control input-md"
+								data-ng-model="countriesInList" data-ng-change="getSiteDetails()"
+								data-ng-options="value.countryName for value in countryJsonArray track by value.countryId">
+								<option disabled selected value="">-- Select Country --</option>
+							</select>
+						</div>
+
+					</td>
+					</tr>
+					
+					<tr>
+					<td>Select Site</td>
+					<td>
+					
+					<div class="dropdown" id="sel3">
+							<select class="form-control input-md"
+								data-ng-model="sitesInList"
+								data-ng-options="value.siteName for value in siteJsonArray track by value.siteId">
+								<option disabled selected value="">-- Select Site --</option>
+							</select>
+						</div>
+					
+					</td>
+					</tr> 
+					
+					<tr>
+					<td colspan="2">
+					<button type="submit" class="btn btn-info">Display Schedule Report</button>
+					<button type="button" data-ng-click="downloadReport()" class="btn btn-success" data-ng-disabled="downloadDetailedReportBtn">Download Detailed Report</button>
+					</td>
+				</tr>
+		
+				</tbody>
+				</table>
+				</div>
+				</form>
+				  
+				  <div id="schedulereport"></div>
+
+
+
+				  <div id="exportable" data-ng-show="hideExportDataTable">
+					    <table>
+					        <thead>
+					            <tr>
+					                <th>First Name</th>
+					                <th>Last Name</th>
+					                <th>Email ID/UPN</th>
+					                <th>Country</th>
+					                <th>Site</th>
+					                <th>Migration Status</th>
+					                <th>Migration Date</th>
+					                <th>Schedule Name</th>
+					                <th>Schedule Status</th>
+									<th>Schedule Start Date</th>
+									<th>Schedule End Date</th>
+					                <th>Schedule Start Time</th>
+									<th>Schedule End Time</th>
+											                
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr data-ng-repeat="scheduleData in downloadReportData">
+					                <td>{{scheduleData.mastersheetDataDTO.firstName}}</td>
+					                <td>{{scheduleData.mastersheetDataDTO.lastName}}</td>
+					                <td>{{scheduleData.mastersheetDataDTO.logIdAsIs}}</td>
+					                <td>{{scheduleData.mastersheetDataDTO.country}}</td>
+					                <td>{{scheduleData.mastersheetDataDTO.site}}</td>
+					                <td>{{scheduleData.migrationStatus}}</td>
+					                <td>{{scheduleData.migrationDate | date:'dd/MM/yyyy'}}</td>
+					                <td>{{scheduleData.slotDTO.slotName}}</td>
+					                <td>{{scheduleData.slotStatus}}</td>
+					                <td>{{scheduleData.slotDTO.startDate | date:'dd/MM/yyyy'}}</td>
+					                <td>{{scheduleData.slotDTO.endDate | date:'dd/MM/yyyy'}}</td>
+					                <td>{{scheduleData.slotDTO.startTime}}</td>
+					                <td>{{scheduleData.slotDTO.endTime}}</td>
+					            </tr>
+					        </tbody>
+					    </table>
+					</div>
+	</div>

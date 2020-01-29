@@ -1,0 +1,52 @@
+<!-- Modal for Update  -->
+<div class="modal fade" id="UpdateModel" tabindex="-1" role="dialog"
+	aria-labelledby="UpdateModelTitle" aria-hidden="true">
+	<form id="updateProjectForm"
+		data-ng-submit=updateProject(projectToBeUpdated)>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Update
+						Project Details</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table>
+						<tr>
+							<td>Project Name <label style="color: red;">*</label> :
+							</td>
+							<td><input type="text"
+								data-ng-model="projectToBeUpdated.name" required></td>
+						</tr>
+						<tr>
+							<td>Project Manager <label style="color: red;">*</label> :
+							</td>
+							<td><input type="text"
+								data-ng-model="projectToBeUpdated.manager" required></td>
+						</tr>
+						<tr>
+							<td>Manager Email ID<label style="color: red;">*</label> :
+							</td>
+							<td><input type="text"
+								data-ng-model="projectToBeUpdated.managerEmail" required></td>
+						</tr>
+						<tr>
+							<td>Description :</td>
+							<td><textarea rows="2" cols="25"
+									data-ng-model="projectToBeUpdated.description" required></textarea></td>
+						</tr>
+					</table>
+					<span class="eventMessage" data-ng-model="updateMessage">{{updateMessage}}</span>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-success">Update</button>
+					<button type="reset" class="btn btn-warning">Reset</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

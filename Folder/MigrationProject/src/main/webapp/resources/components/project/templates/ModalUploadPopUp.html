@@ -1,0 +1,60 @@
+<!-- Modal for Upload Mastersheet  -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1"
+	role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Upload
+					Mastersheet</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form data-ng-model="uploadNow"
+				enctype="multipart/form-data">
+				<div class="modal-body">
+					<table>
+						<tr>
+							<td>Uploading sheet for <strong>{{projectInList.name}}
+									:</strong> <input type="file" name="file" id="masterSheetFile"
+								data-ng-model="masterSheet" accept=".xls,.xlsx,.csv"
+								onchange="angular.element(this).scope().validateMasterSheet(this.files)">
+							</td>
+						</tr>
+						<tr>
+							<td><a
+								href="resources/components/project/Sample Template/Migration Accelerator Template.xlsx">Sample
+									Template </a></td>
+						</tr>
+						<tr>
+							<td><span class="eventMessage"
+								data-ng-model="uploadSheetMessage">{{uploadSheetMessage}}</span></td>
+							<td>
+								<div class="alert alert-danger fade in">
+									<strong>Errors!</strong> {{errors.value}}
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success btn-sm"
+						data-ng-disabled="overwriteButton" data-ng-click="overwriteRecords()">Overwrite</button>
+						
+					<button type="button" class="btn btn-success btn-sm"
+						data-ng-disabled="appendButton" data-ng-click="appendRecords()">Append</button>
+						
+					<button type="button" class="btn btn-success btn-sm"
+					data-ng-disabled="overwriteAndAppendButton" data-ng-click="appendAndOverwriteRecords()">Overwrite &amp; Append</button>
+				
+					<button type="button" class="btn btn-success btn-sm"
+						data-ng-disabled="uploadButton" data-ng-click="uploadMasterSheet()">Upload Now</button>
+						
+					<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

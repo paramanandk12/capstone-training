@@ -1,0 +1,50 @@
+<div style="margin-top: 100px;" data-ng-init="onPageLoad()">
+	<!-- Navigation Bar Starts -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2 class="nav-brand">Reports</h2>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><h6>Welcome Admin</h6></li>
+			</ul>
+			
+			<ul class="nav navbar-nav">
+				<li><a href="#!reportHome" class="btn btn-info btn-sm"
+					role="button">Back</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						Logout</a></li>
+			</ul>
+			
+		</div>
+	</nav>
+	
+	<div>
+		<table class="table table-striped">
+
+			<tbody>
+			<tr>
+					<td>Select Project list :</td>
+					<td><div class="dropdown" id="sel1">
+							<select required="required" class="form-control input-md"
+								data-ng-model="projectInList" data-ng-change="getCountryDetails()"
+								data-ng-options="'PROJ' + value.id + ' - ' + value.name for value in projectJsonArray track by value.id">
+								<option disabled selected value="">-- Select a Project
+									--</option>
+							</select>
+						</div></td>
+				</tr>
+			<tr>
+					<td colspan="2">
+					<button type="submit" class="btn btn-info">Display Graphs</button>
+					</td>
+				</tr>
+		
+				</tbody>
+				</table>
+				</div>
+	</div>
+	
